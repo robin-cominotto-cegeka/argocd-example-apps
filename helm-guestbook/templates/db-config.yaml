@@ -1,0 +1,8 @@
+apiVersion: V1
+kind: ConfigMap
+metadata:
+  name: db-config
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+data:
+  db_host: "postgres_db"
